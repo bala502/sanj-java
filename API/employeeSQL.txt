@@ -1,0 +1,21 @@
+CREATE SCHEMA IF NOT EXISTS `employee_db`;
+USE `employee_db`;
+
+CREATE TABLE IF NOT EXISTS `employee` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `first_name` VARCHAR(255),
+    `last_name` VARCHAR(255),
+    `email` VARCHAR(255)
+);
+
+
+INSERT INTO `employee` (`first_name`, `last_name`, `email`)
+VALUES ('John', 'Doe', 'john.doe@example.com');
+
+INSERT INTO `employee` (`first_name`, `last_name`, `email`)
+VALUES ('Jane', 'Smith', 'jane.smith@example.com');
+
+INSERT INTO `employee` (`first_name`, `last_name`, `email`)
+VALUES ('Michael', 'Johnson', 'michael.johnson@example.com');
+
+select * from employee_db.employee;
